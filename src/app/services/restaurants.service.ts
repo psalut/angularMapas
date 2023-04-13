@@ -3,6 +3,8 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
+
+// Simulates an API
 export class RestaurantsService {
 
   restaurants = [
@@ -10,8 +12,7 @@ export class RestaurantsService {
       id: 1,
       name: "Mostaza",
       type: "Fast food",
-      add: "Av. Pellegrini 1431, S2000 BUB, Santa Fe",
-      address: [-32.9566287954022, -60.64568247050882],
+      address: "1431, Avenida Carlos Pellegrini, Paseo Pellegrini, Abasto, Distrito Centro, Rosario, Municipio de Rosario, Gran Rosario, Departamento Rosario, Santa Fe, S2000, Argentina",
       hours: "Monday - Friday between 9am - 16pm",
       phoneNumber:"+54 9 3415507590"
     },
@@ -19,8 +20,7 @@ export class RestaurantsService {
       id: 2,
       name: "John coffee shop",
       type: "Coffee shop",
-      add: "Dorrego 492, S2000 Rosario, Santa Fe",
-      address: [-32.9408389313544, -60.64843152656649],
+      address: "492, Manuel Dorrego, Rosario Centro, Distrito Centro, Rosario, Municipio de Rosario, Gran Rosario, Departamento Rosario, Santa Fe, S2000, Argentina",
       hours: "Monday - Wednesday between 9am - 16pm",
       phoneNumber:"+54 9 3415507590"
     },

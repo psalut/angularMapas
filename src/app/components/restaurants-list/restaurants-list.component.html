@@ -1,4 +1,6 @@
 <div>
   <!-- <div id="map" [ngStyle]="{'height.px': mapHeight()}"></div> -->
   <div id="map"></div>
+  <button id="refreshButton" (click)="calculateDistances()" *ngIf="!showDistances">Show Distances</button>
+  <button id="refreshButton" (click)="removePolylines()" *ngIf="showDistances">Hide Distances</button>
 </div>

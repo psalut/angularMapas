@@ -2,53 +2,59 @@
   <h2>Add Restaurant</h2>
   <form [formGroup]="restaurantForm" (ngSubmit)="onSubmit()">
 
-    <div class="mb-3">
-      <label for="name" class="form-label">Name</label>
-      <input type="text" class="form-control" id="name" formControlName="name">
-      <div *ngIf="restaurantForm.controls?.['name'].invalid && (restaurantForm.controls?.['name'].dirty || restaurantForm.controls?.['name'].touched)">
-        <div *ngIf="restaurantForm.controls?.['name'].errors?.['required']">Name is required</div>
-      </div>      
+    <div class="row">
+      <div class="col-6 col-lg-6 col-md-6 col-sm-6 forms">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" formControlName="name">
+          <div *ngIf="restaurantForm.controls?.['name'].invalid && (restaurantForm.controls?.['name'].dirty || restaurantForm.controls?.['name'].touched)">
+            <div *ngIf="restaurantForm.controls?.['name'].errors?.['required']">Name is required</div>
+          </div>      
+        </div>
+    
+        <div class="mb-3">
+          <label for="type" class="form-label">Type</label>
+          <select id="type" class="form-select" aria-label="Default select example" formControlName="type">
+            <option value="Fast food">Fast Food</option>
+            <option value="Coffee shop">Coffee shop</option>
+          </select>
+          <div *ngIf="restaurantForm.controls?.['type'].invalid && (restaurantForm.controls?.['type'].dirty || restaurantForm.controls?.['type'].touched)">
+            <div *ngIf="restaurantForm.controls?.['type'].errors?.['required']">Type is required</div>
+          </div>   
+        </div>
+    
+        <div class="mb-3">
+          <label for="hours" class="form-label">Hours</label>
+          <textarea type="text" class="form-control" id="hours" formControlName="hours"></textarea>
+          <div *ngIf="restaurantForm.controls?.['hours'].invalid && (restaurantForm.controls?.['hours'].dirty || restaurantForm.controls?.['hours'].touched)">
+            <div *ngIf="restaurantForm.controls?.['hours'].errors?.['required']">Hours is required</div>
+          </div>      
+        </div>
+    
+        <div class="mb-3">
+          <label for="phoneNumber" class="form-label">Phone Number</label>
+          <input type="text" class="form-control" id="phoneNumber" formControlName="phoneNumber">
+          <div *ngIf="restaurantForm.controls?.['phoneNumber'].invalid && (restaurantForm.controls?.['phoneNumber'].dirty || restaurantForm.controls?.['phoneNumber'].touched)">
+            <div *ngIf="restaurantForm.controls?.['phoneNumber'].errors?.['required']">Phone Number is required</div>
+          </div>      
+        </div>
+
+        <div class="buttons">
+          <div class="inner-container">
+            <button class="btn btn-primary btn-lg" type="submit" [disabled]="restaurantForm.invalid">Submit</button>
+            <button class="btn btn-danger btn-lg" (click)="cancelCreation()">Cancel</button>
+          </div>
+        </div>
+
+      </div>
+  
+      <div class="col-6 col-lg-6 col-md-6 col-sm-6">
+        <label for="address" class="form-label">Address</label>
+        <div id="map-add"></div>
+        <div *ngIf="restaurantForm.controls?.['address'].invalid && (restaurantForm.controls?.['address'].dirty || restaurantForm.controls?.['address'].touched)">
+          <div *ngIf="restaurantForm.controls?.['address'].errors?.['required']">Address is required</div>
+        </div> 
+      </div>
     </div>
-
-    <div class="mb-3">
-      <label for="type" class="form-label">Type</label>
-      <select id="type" class="form-select" aria-label="Default select example" formControlName="type">
-        <option selected>Options</option>
-        <option value="1">Fast Food</option>
-        <option value="2">Coffee shop</option>
-        <option value="3">Restaurant</option>
-      </select>
-      <div *ngIf="restaurantForm.controls?.['type'].invalid && (restaurantForm.controls?.['type'].dirty || restaurantForm.controls?.['type'].touched)">
-        <div *ngIf="restaurantForm.controls?.['type'].errors?.['required']">Type is required</div>
-      </div>   
-    </div>
-
-    <div class="mb-3">
-      <label for="address" class="form-label">Address</label>
-      <input type="text" class="form-control" id="address" formControlName="address">
-      <div *ngIf="restaurantForm.controls?.['address'].invalid && (restaurantForm.controls?.['address'].dirty || restaurantForm.controls?.['address'].touched)">
-        <div *ngIf="restaurantForm.controls?.['address'].errors?.['required']">Address is required</div>
-      </div>      
-    </div>
-
-    <div class="mb-3">
-      <label for="hours" class="form-label">Hours</label>
-      <textarea type="text" class="form-control" id="hours" formControlName="hours"></textarea>
-      <div *ngIf="restaurantForm.controls?.['hours'].invalid && (restaurantForm.controls?.['hours'].dirty || restaurantForm.controls?.['hours'].touched)">
-        <div *ngIf="restaurantForm.controls?.['hours'].errors?.['required']">Hours is required</div>
-      </div>      
-    </div>
-
-    <div class="mb-3">
-      <label for="phoneNumber" class="form-label">Phone Number</label>
-      <input type="text" class="form-control" id="phoneNumber" formControlName="phoneNumber">
-      <div *ngIf="restaurantForm.controls?.['phoneNumber'].invalid && (restaurantForm.controls?.['phoneNumber'].dirty || restaurantForm.controls?.['phoneNumber'].touched)">
-        <div *ngIf="restaurantForm.controls?.['phoneNumber'].errors?.['required']">Phone Number is required</div>
-      </div>      
-    </div>
-
-
-
-    <button class="btn btn-primary" type="submit" [disabled]="restaurantForm.invalid">Submit</button>
   </form>
 </div>

@@ -16,5 +16,9 @@ export class AppComponent {
   addRestaurant() {
     this.router.navigate(['add-restaurant']);
   }
+
+  navigateHome() {
+    this.router.navigate(['restaurants-list']);
+  }
 }
 

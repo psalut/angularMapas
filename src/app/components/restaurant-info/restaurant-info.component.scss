@@ -17,22 +17,34 @@
 }
 
 .more-details {
+  border-top: 2px solid #ced4da;;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   margin-top: 0;
 }
 
 p {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.5;
-  margin: 10px;
+  margin: 20px;
+}
+
+div .more-details p:first-of-type {
+  margin-top: 25px;
 }
 
 img {
-  max-width: 100%;
-  margin: 10px 0;
+  width: 80%;
+  margin: auto;
+}
+
+.btn {
+  position: absolute;
+  margin: 10px 0px;
+  bottom: 0;
 }

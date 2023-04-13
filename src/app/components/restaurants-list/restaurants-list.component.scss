@@ -61,3 +61,15 @@
 ::ng-deep .leaflet-popup-close-button span {
   font: 29px/34px Tahoma, Verdana, sans-serif;
 }
+
+#refreshButton {
+  background-color: #dc3545;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  z-index: 400;
+}

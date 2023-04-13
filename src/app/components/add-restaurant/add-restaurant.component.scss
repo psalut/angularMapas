@@ -14,3 +14,30 @@ h2 {
 form {
   margin: 10px;
 }
+
+#map-add {
+  height: 400px;
+  border-radius: 5px;
+  border: 2px solid #ced4da;
+}
+
+.forms {
+  position: relative;
+}
+
+.buttons-container {
+  position: relative;
+  width: 100% !important;
+}
+
+.inner-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  margin: 0px 10px;
+}
