@@ -1,0 +1,38 @@
+.row {
+  padding: 20px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: #f1f1f1;
+}
+
+.detail {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 0px 20px 20px 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.more-details {
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 10px;
+}
+
+img {
+  max-width: 100%;
+  margin: 10px 0;
+}

@@ -1,1 +1,15 @@
-<router-outlet></router-outlet>
+<div class="navbar-container">
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Angular Restaurants Map</a>
+    <div id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <button class="btn btn-primary btn" (click)="addRestaurant()">Add Restaurant</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="main-container">
+  <router-outlet></router-outlet>
+</div>

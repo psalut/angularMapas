@@ -1,4 +1,63 @@
-#map {
-  width: 90vw;
-  height: 90vh;
+
+@media screen and (max-width: 1400px) {
+  #map {
+    width: 100%;
+    height: 90vh;
+  }
+}
+@media (min-width: 1401px) {
+  #map {
+    width: 100%;
+    height: 93vh;
+  }
+}
+
+::ng-deep .leaflet-popup-content-wrapper {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 220px;
+  justify-content: space-between;
+  padding: 5px;
+  text-align: center;
+}
+
+::ng-deep .leaflet-popup-content-wrapper .leaflet-popup-content {
+  font-size: 14px;
+  // margin: 5px;
+}
+
+::ng-deep .leaflet-popup-content-wrapper .leaflet-popup-content h1 {
+  font-size: 28px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #dddddd;
+}
+
+::ng-deep .leaflet-popup-content-wrapper .leaflet-popup-content p {
+  font-size: 17px;
+  margin: 0px;
+  text-align: start;
+  padding-left: 10px;
+}
+
+::ng-deep .leaflet-popup-content-wrapper .leaflet-popup-content button {
+  background-color: #0d6efd;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 18px;
+  margin-top: 10px;
+  padding: 0.5rem 1rem;
+}
+
+::ng-deep .leaflet-popup-close-button {
+  width: 40px;
+  height: 40px;
+}
+
+::ng-deep .leaflet-popup-close-button span {
+  font: 29px/34px Tahoma, Verdana, sans-serif;
 }

@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-8 col-lg-8 col-md-8 col-sm-8 detail">
+    <h2>{{ restaurantSelected.name }}</h2>
+    <div class="more-details">
+      <p>Type: <b>{{restaurantSelected.type}}</b></p>
+      <p>Address: <b>{{restaurantSelected.add}}</b></p>
+      <p>Phone number: <b>{{restaurantSelected.phoneNumber}}</b></p>
+      <p>Hours: <b>{{restaurantSelected.hours}}</b></p>
+    </div>
+    <div>
+      <button class="btn btn-primary" (click)="returnToList()">Return to list</button>
+    </div>
+  </div>
+  <div class="col-3 col-lg-3 col-md-3 col-sm-3 detail">
+    <!-- <img src="https://via.placeholder.com/400x200" alt="Image of the restaurant"> -->
+    <img *ngIf="restaurantSelected.type === 'Fast food'" src="../../../assets/markers/burguer.png" alt="Image of the restaurant">
+    <img *ngIf="restaurantSelected.type === 'Coffee shop'" src="../../../assets/markers/coffee.png" alt="Image of the restaurant">
+  </div>
+</div>

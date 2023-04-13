@@ -1,0 +1,29 @@
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 1400px) {
+  .main-container {
+    height: 90vh;
+  }
+
+  .navbar-container {
+    height: 10vh;
+  }
+}
+@media (min-width: 1401px) {
+  .navbar-container {
+    height: 7vh;
+  }
+  
+  .main-container {
+    height: 93vh;
+    // background-color: green;
+  }
+}
